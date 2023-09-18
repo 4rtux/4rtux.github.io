@@ -1,7 +1,6 @@
 #cont{
     max-width: 1080px;
     width: 80%;
-    height: 60vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +16,27 @@
     flex-grow:1
 
 }
+.fil{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.column{
+    max-width: 500px;
+    margin: 5px;
+    height: 100px;
+    width: 16%;
+    padding: 5px;
+    box-sizing:border-box;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .col {
+    max-width: 500px;
     margin: 5px;
     height: 100px;
     width: 16%;
@@ -27,6 +46,6 @@
     box-sizing:border-box;
     flex-grow: 1;
     border-radius: 8px;
-    display: grid;
+    display: flex;
 
 }
