@@ -10,7 +10,7 @@
     border: 1px solid;
     margin: 5px;
     border-radius: 8px;
-    height: 306px;
+    height: 310px;
     width: 40%;
     display: inline-block;
     flex-grow:1
@@ -24,10 +24,9 @@
 }
 .column{
     max-width: 500px;
-    margin: 5px;
     height: 100px;
     width: 16%;
-    padding: 5px;
+    padding: 1px;
     box-sizing:border-box;
     flex-grow: 1;
     border-radius: 8px;
@@ -37,7 +36,7 @@
 }
 .col {
     max-width: 500px;
-    margin: 5px;
+    margin: 3px;
     height: 100px;
     width: 16%;
     background-color: darkmagenta;
