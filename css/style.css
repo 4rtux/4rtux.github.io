@@ -10,11 +10,13 @@
     border: 1px solid;
     margin: 5px;
     border-radius: 8px;
-    height: 310px;
+    height: 270px;
     width: 40%;
-    display: inline-block;
-    flex-grow:1
-
+    display:flex;
+    flex-grow:1;
+    justify-content: center;
+    padding:20px;
+    align-items:flex-start;
 }
 .fil{
     max-width: 1080px;
@@ -46,5 +48,9 @@
     flex-grow: 1;
     border-radius: 8px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+
