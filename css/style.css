@@ -17,6 +17,23 @@ body{
       height: 100%;
       margin-top: 250px;
 }
+.conten2{
+    /*max-width: 1080px;*/
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}
+.imagen{
+    height: 100%;
+    width: fit-content;
+    margin: 3px;
+    height: auto;
+    width: 16%;
+    box-sizing:border-box;
+    flex-grow: 0.5;
+    border-radius: 8px;
+    display: flex;
+}
 .section1:first-child{
     position: relative;
     background-color:cadetblue;
@@ -38,12 +55,28 @@ body{
     /*margin: 0 auto;*/
     display: flex;
 }
+.filaT{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    background-color: #aaa59e;
+    justify-content:center;
+    align-items: center;
+
+}
 .texto{
     display:flex;
     flex-grow:1;
     justify-content:center;
     align-items: center;
-    overflow: hidden;
+    max-width: 500px;
+    margin: 3px;
+    height: max-content;
+    width: 16%;
+    box-sizing: content-box;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
 }
 .column{
     max-width: 500px;
