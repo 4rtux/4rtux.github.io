@@ -112,7 +112,15 @@ body{
     font-family: 'Gang of three';
     color: #e8e6e3;
     overflow: hidden;
+    transition: background-color 0.3s;
 
+}
+.col:hover{
+    background-color:brown;
+}
+.col a {
+    text-decoration: none; /* Remove underline */
+    color:#e8e6e3; /* Set your desired link color */
 }
 
 .video{
