@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'Gang of three';
     src: url('../media/letra1.ttf');
+    
 }
+
 body{
     background-color: #181a1b;
 }
