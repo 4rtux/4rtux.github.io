@@ -3,26 +3,28 @@ html{
 }
 @font-face {
     font-family: 'Gang of three';
-    src: url('../media/letra1.ttf');
-    
+    src: url('../media/letra1.ttf'); 
 }
-
+@font-face {
+    font-family: 'Poppins';
+    src: url(../media/Poppins-Regular.ttf);
+}
 body{
     background-color: #181a1b;
 }
-#cont{
+#cont1{
     /*max-width: 1080px;*/
     width: 100%;
     height: 100%;
     display: flex;
 }
-.conten{
+.cont2{
       /*max-width: 1080px;*/
       width: 100%;
       height: 100%;
       margin-top: 250px;
 }
-.conten2{
+.cont3{
     /*max-width: 1080px;*/
     width: 100%;
     height: 100%;
@@ -31,13 +33,14 @@ body{
 .imagen{
     height: 100%;
     width: fit-content;
-    margin: 3px;
+    /*margin: 3px;*/
     height: auto;
-    width: 16%;
+    width: 26%;
     box-sizing:border-box;
     flex-grow: 0.5;
-    border-radius: 8px;
+    border-radius: 20px;
     display: flex;
+    padding:10px;
 }
 .section1:first-child{
     position: relative;
@@ -63,10 +66,15 @@ body{
 .filaT{
     width: 100%;
     max-width: 1080px;
+    height: 380px;
+    max-height: 500px;
     display: flex;
     background-color: #aaa59e;
     justify-content:center;
     align-items: center;
+    border-radius: 10px;
+    font-family: 'Poppins';
+
 
 }
 .texto{
@@ -82,6 +90,7 @@ body{
     flex-grow: 1;
     border-radius: 8px;
     display: flex;
+    padding:20px;
 }
 .column{
     max-width: 500px;
@@ -105,7 +114,7 @@ body{
     border: 3px solid #551829;
     box-sizing:border-box;
     flex-grow: 1;
-    border-radius: 30px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,20 +155,7 @@ body{
 
 }
 
-.carta{
-    margin: 3px;
-    width: 67%;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    color:#e8e6e3
-}
-
 .text{
-    margin-top: 230px; /* Espacio entre techo de la web y el texto.
-    Necesitamos que el techo sea el bottom de section1 y de los col 
-    pero no tengo ni idea de como hacerlo, haz lo tuyo Rodrigo*/
     padding: 10px;
     background-color: #181a1b; 
     border-radius: 5px;
@@ -177,5 +173,41 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.grupo{
+    max-width: 1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:50px;
+    padding:45px 0px;
+}
+.box{
+    color:#e8e6e3;
+
+}
+.box img{
+    width:220px;
+    /*se me ralla el logo*/
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box h2{
+    margin-bottom:25px;
+    font-size:20px;
+}
+.box p{
+    color:#9f9f9f;
+    margin-bottom: 10px;
+}
+.redes a{
+    display:inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right:10px;
 }
 
