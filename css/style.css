@@ -15,19 +15,24 @@
         background-color: #181a1b;
     }
     #cont1{
-        width: 100%;
+        width: 92%;
         height: 100%;
     }
     .cont2{
-        width: 100%;
+        width: 92%;
         height: 100%;
-        margin-top: 2px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         
     }
     .cont3{
-        width: 100%;
+        width: 92%;
         height: 100%;
-        margin-top: 25px;
+        margin-top: 20px;
+
+    }
+    .vacio{
+        height:90px;
     }
     .imagen{
         width:100%;
@@ -76,6 +81,7 @@
         justify-content:center;
         align-items: center;
         flex-grow:1;
+        text-decoration: none;
 
     }
     .texto{
@@ -110,6 +116,7 @@
         overflow: hidden;
         transition: background-color 0.3s;
 
+
     }
     .col:hover{
         background-color:brown;
@@ -125,6 +132,7 @@
         justify-content: center;
         align-items: center;
         padding: auto;
+        text-decoration: none;
     }
 
     .video{
@@ -168,12 +176,17 @@
     }
 
     .grupo{
+        position: fixed;
+        width: 100%;
+        bottom:0px;
         max-width: 1200px;
-        margin:auto;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:50px;
-        padding:45px 0px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        grid-gap:10px;
+        padding:4px;
+        background-color: #181a1b;
+
     }
     .box{
         color:#e8e6e3;
@@ -181,57 +194,68 @@
     }
     .box img{
         width:auto;
-        max-height: 150px;
+        height: 70px;
         display:flex;
-        flex-shrink: 1;
+        justify-content: center;
+        align-items: center;
     }
-    .box h2{
+    /*.box h2{
         margin-bottom:25px;
         font-size:20px;
-    }
+    }*/
     .box p{
         color:#9f9f9f;
-        margin-bottom: 10px;
+        font-family: "Poppins";
+        font-size: 12px;
     }
-    .redes a{
+    /*.redes a{
         display:inline-block;
         width: 45px;
         height: 45px;
         line-height: 45px;
         margin-right:10px;
-    }
-    header{
-        display:flex;
-        flex-direction: column;
-    }
-    nav{
+    }*/
+
+    header {
+        background-color: #7b223b;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
         padding-top: 20px;
-        padding-left: 5%;
-        padding-right: 5%;
-        font-weight: bold;
-        color:#e8e6e3;
-    }
     
-    nav img{
-        width: 80px;
-
     }
 
-    ul li{
-        display: inline-block;
-        padding: 0px 10px;
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1; /* Permite que la lista de enlaces crezca y ocupe todo el espacio disponible */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        padding: 10px;
     }
     
-    a{
+    .logo img{
+        display:flex;
+        width: 70px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 32%;
+
+    }
+    
+    .nav-links a {
         color:#e8e6e3;
         text-decoration: none;
+        font-family: 'Poppins';
     }
 
     a:hover{
-        color:aquamarine;
+        color:black;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -253,6 +277,7 @@
         width: 100%;
         height: 100%;
         display: flex;
+        padding-top: 25px;
     }
     .cont2{
         width: 100%;
@@ -262,7 +287,10 @@
     .cont3{
         width: 100%;
         height: 100%;
-        margin-top: 25px;
+        margin-top: 30px;
+    }
+    .vacio{
+        height:90px;
     }
     .imagen{
         height: 100%;
@@ -369,6 +397,7 @@
         color: #e8e6e3;
         overflow: hidden;
         transition: background-color 0.3s;
+        text-decoration: none;
 
     }
     .col:hover{
@@ -383,6 +412,7 @@
         height: 100%;
         width: fit-content;
         position: absolute;
+
     }
     .text-overlay{
         position: absolute;
@@ -420,31 +450,36 @@
     }
 
     .grupo{
+        position: fixed;
+        width: 100%;
+        bottom:0px;
         max-width: 1200px;
-        margin:auto;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:50px;
-        padding:45px 0px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        grid-gap:20px;
+        padding-top:5px;
+        padding-bottom: 10px;
+        background-color: #181a1b;
     }
     .box{
         color:#e8e6e3;
 
     }
     .box img{
-        width:220px;
-        height: 100%;
+        width:auto;
+        height: 70px;
         display:flex;
         justify-content: center;
         align-items: center;
     }
-    .box h2{
+    /*.box h2{
         margin-bottom:25px;
         font-size:20px;
-    }
+    }*/
     .box p{
         color:#9f9f9f;
-        margin-bottom: 10px;
+        font-family: "Poppins";
     }
     .redes a{
         display:inline-block;
@@ -462,6 +497,8 @@
         padding-right: 5%;
         font-weight: bold;
         color:#e8e6e3;
+        background-color: #7b223b;
+        padding-bottom: 20px;
     }
     
     nav img{
@@ -476,11 +513,12 @@
     
     a{
         color:#e8e6e3;
+        font-family: "Poppins";
         text-decoration: none;
     }
 
     a:hover{
-        color:aquamarine;
+        color:black
     }
 }
 @media only screen and (min-width: 992px) {
@@ -489,6 +527,7 @@
     }
     @font-face {
         font-family: 'Gang of three';
+        
         src: url('../media/letra1.ttf'); 
     }
     @font-face {
@@ -661,20 +700,25 @@
     }
 
     .grupo{
+        position: fixed;
+        width: 100%;
+        bottom:0px;
         max-width: 1200px;
-        margin:auto;
-        display:grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-gap:50px;
-        padding:45px 0px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        grid-gap:20px;
+        padding-top:5px;
+        padding-bottom: 10px;
+        background-color: #181a1b;
     }
     .box{
         color:#e8e6e3;
 
     }
     .box img{
-        width:220px;
-        height: 100%;
+        width:auto;
+        height: 70px;
         display:flex;
         justify-content: center;
         align-items: center;
