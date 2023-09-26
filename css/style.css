@@ -543,31 +543,29 @@
         background-color: #181a1b;
     }
     #cont1{
-        width: 100%;
-        height: 100%;
+        width: auto;
         display: flex;
         padding-top: 25px;
+
     }
     .cont2{
-        width: 100%;
-        height: 100%;
-        margin-top: 250px;
+        width: auto;
+        max-width: 1080px;
+        margin: 0 auto;
     }
     .cont3{
-        width: 100%;
-        height: 100%;
-        margin-top: 30px;
+        width: auto;
+        max-width: 1080px;
+        margin: 0 auto;
     }
     .vacio{
         height:90px;
     }
     .imagen{
         height: 100%;
-        width: fit-content;
-        height: auto;
-        width: 26%;
+        width: 46%;
         box-sizing:border-box;
-        flex-grow: 0.5;
+        flex:1;
         border-radius: 20px;
         display: flex;
         padding:10px;
@@ -577,8 +575,8 @@
         background-color:cadetblue;
         margin: 3px;
         border-radius: 8px;
-        height: 313px;
-        width: 40%;
+        height:413px;
+        width: 100%;
         display:flex;
         flex-grow:1;
         justify-content:center;
@@ -614,6 +612,7 @@
         align-items: center;
         border-radius: 10px;
         font-family: 'Poppins';
+        margin-bottom:30px;
     }
     .filaT a{
         display: flex;
@@ -625,23 +624,20 @@
     }
     .texto{
         display:flex;
-        flex-grow:1;
+        flex:1;
         justify-content:center;
         align-items: center;
-        max-width: 500px;
         margin: 3px;
         height: max-content;
-        width: 16%;
+        width: 100%;
         box-sizing: content-box;
         flex-grow: 1;
         border-radius: 8px;
-        display: flex;
         padding:20px;
     }
     .column{
-        max-width: 500px;
-        height: 100px;
-        width: 16%;
+        max-width: 1080px;
+        height:455px;
         box-sizing:border-box;
         flex-grow: 1;
         border-radius: 8px;
@@ -652,7 +648,7 @@
     .col {
         max-width: 500px;
         margin: 3px;
-        height: 100px;
+        height: 120px;
         width: 16%;
         background-color: #7b223b;
         border: 3px solid #551829;
@@ -679,7 +675,7 @@
 
     .video{
         height: 100%;
-        width: fit-content;
+        width:auto;
         position: absolute;
 
     }
@@ -742,10 +738,6 @@
         justify-content: center;
         align-items: center;
     }
-    /*.box h2{
-        margin-bottom:25px;
-        font-size:20px;
-    }*/
     .box p{
         color:#9f9f9f;
         font-family: "Poppins";
