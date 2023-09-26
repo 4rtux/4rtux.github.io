@@ -575,7 +575,7 @@
         background-color:cadetblue;
         margin: 3px;
         border-radius: 8px;
-        height:413px;
+        height:550px;
         width: 100%;
         display:flex;
         flex-grow:1;
@@ -589,6 +589,7 @@
         width: 100%;
         display: flex;
         box-sizing:border-box;
+        margin-top:38px;
     }
     .fil a{
         max-width: 500px;
@@ -622,6 +623,11 @@
         flex-grow:1;
 
     }
+
+    .filaT:first-child{
+        margin-top: 20px;
+    }
+
     .texto{
         display:flex;
         flex:1;
@@ -634,10 +640,11 @@
         flex-grow: 1;
         border-radius: 8px;
         padding:20px;
+        font-size: 20px;
     }
     .column{
         max-width: 1080px;
-        height:455px;
+        height:560px;
         box-sizing:border-box;
         flex-grow: 1;
         border-radius: 8px;
@@ -648,13 +655,13 @@
     .col {
         max-width: 500px;
         margin: 3px;
-        height: 120px;
+        height: 175px;
         width: 16%;
         background-color: #7b223b;
         border: 3px solid #551829;
         box-sizing:border-box;
         flex-grow: 1;
-        border-radius: 50px;
+        border-radius: 90px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -663,6 +670,7 @@
         overflow: hidden;
         transition: background-color 0.3s;
         text-decoration: none;
+        font-size:30px;
 
     }
     .col:hover{
@@ -671,6 +679,7 @@
     .col a {
         text-decoration: none; /* Remove underline */
         color:#e8e6e3; /* Set your desired link color */
+        
     }
 
     .video{
@@ -694,61 +703,55 @@
 
     }
 
-    .text{
+    /*.text{
         padding: 10px;
         background-color: #181a1b; 
         border-radius: 5px;
         font-size: 13px;
-        text-align: left; /* Alinear el texto a la izquierda */
-    }
+        text-align: left;
+    }*/
+
+
     .contenedor{
         position: relative;
         display: inline-block;
         text-align: center;
     }
-
-    .centrado{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    
+    .pie{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
     }
 
     .grupo{
         position: fixed;
         width: 100%;
         bottom:0px;
-        max-width: 1200px;
         display:flex;
         text-align: center;
         justify-content: center;
-        grid-gap:20px;
-        padding-top:5px;
-        padding-bottom: 10px;
         background-color: #181a1b;
     }
+
     .box{
         color:#e8e6e3;
+        text-align: center;
+        padding:10px;
 
     }
+
     .box img{
         width:auto;
         height: 70px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
     }
+
     .box p{
         color:#9f9f9f;
         font-family: "Poppins";
     }
-    .redes a{
-        display:inline-block;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        margin-right:10px;
-    }
+
     nav{
         display: flex;
         align-items: center;
